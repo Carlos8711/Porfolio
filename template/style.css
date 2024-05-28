@@ -146,7 +146,8 @@ section{
 }
 .card-news img{
     width: 100%;
-    height: 70%; 
+    height: 80%; 
+    box-shadow: 0 0 5px;
     filter: grayscale(10%);
 }
 .card-news h2{
@@ -167,7 +168,7 @@ span{
 }
 .conteiner-social-networld{
     width: 100%;
-    height: 35%; 
+    height: 20%; 
     display: flex;
     justify-content: center;
     align-items: center;
