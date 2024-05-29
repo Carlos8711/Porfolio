@@ -1,0 +1,225 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+    
+}
+header{
+    width: 100%;
+    height: 5%;
+}
+
+footer{
+    width: 100%;
+    height: 4%;
+}
+
+footer h4{
+    width: 100%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #2223;
+    color:#000000;  
+    margin: 0;
+}
+.navbar{
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-top: 1px solid #ffe;
+}
+.navbar ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #242323;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li{
+    width: 6%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.navbar a{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out
+}
+main{
+    width: 100%;
+    height: 91%;
+}
+section{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+/*******************************************/
+.rubik-uniquifier{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .rubik{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+.josefin-slab{
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: normal;
+}
+/********************************************/
+
+
+.conteiner-social-networld{
+    width: 10%;
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.social-networld{
+    width: 60%;
+    height: 60%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-networld a{
+    width: 10%;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-networld a i{
+    font-size: 30px; 
+    color: #222;
+}
+/***************************************************/
+button:hover{
+    background-color: #fff;
+    transform: scale(1.01);
+    color: #000;
+    border: none;
+}
+.navbar a:hover{
+    color: #999;
+}
+.form textarea:hover{
+    border: 1px solid black;
+    transform: scale(0.99);
+}
+/***************************************************/
+/**************************************************/
+.conteiner-form{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.196);
+    top: 8%;
+    right: 0%;
+}
+.conteiner-title-contact{
+    width: 45%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+.conteiner-title-contact img{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    font-size: 20px;  
+    overflow: hidden;
+    
+}
+.form i{
+    width: 95%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+ 
+}
+.form h2{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+.form input {
+    width: 80%;
+    height: 7%;
+    margin: 2%;
+    padding-left:10px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+}
+.form textarea {
+    width: 80%;
+    height: 25%;
+    margin: 2%;
+    border: none;
+    transition: all 0.1s ease-in-out;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+}
+button {
+    width: 20%;
+    height: 7%;
+    color: #ffffff;
+    font-size: 19px;
+    letter-spacing: 1px;
+    background-color:  #242323; ;
+    transition: all 0.5s ease-in-out ;
+    border: 1px solid
+}
