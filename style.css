@@ -48,8 +48,6 @@ z-index: 100;
     width: 50%;
     height: 100%;
     display: flex;
-
-
 }
 .container-title-nav h1{
     max-width: 50%;
@@ -112,35 +110,94 @@ section{
     justify-content: center;
     align-items: center;
     top: 20%;
-    left: 20%;
+    left: 25%;
     position: absolute;
     background-color: #eee;
+    box-shadow: 15px 15px 10px #0009;
 }
 .container-card-photo{
-    width: 65%;
+    width: 40%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-   border: 1px solid rgb(111, 219, 10);
+    flex-direction: column;
 }
 .container-card-data{
-    width: 55%;
+    width: 60%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
 }
-.container-card-photo img{
+.card-photo{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+.card-photo img{
     width: 180px;
     height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #eee;
 }
+.container-social-networld{
+    width: 100%;
+    height: 50%;
+    display: flex; 
+    flex-direction: column;
+}
+.container-social-networld ul{
+    width: 100%;
+    height: 25%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+}
+.container-social-networld ul li{
+    width: 20%;
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: #ccc;
+}
+i{
+    color: #000; 
+}
+
+
+.container-social-networld h2{
+    width: 100%;
+    height: 40%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    font-size: 35px;
+}
+.container-social-networld h3{
+    width: 100%;
+    height: 35%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    margin: 0;
+}
+
+
 
 .container-section{
     width: 45%;
@@ -160,8 +217,38 @@ section{
 
     /***************************************************/
     .container-footer{
-        width: 50%;
+        width: 100%;
         height: 100%;
-       border-top: 1px solid #0005;
+        display: flex;
+         border-top: 1px solid #0005;
+    }
+    .container-data-footer{
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid red;
+    }
+    .container-data-footer h2{
+        max-width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid red;
+        margin: 0;
+    }
+    .container-data-footer h4{
+        max-width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid red;
+        margin: 0;
     }
         
