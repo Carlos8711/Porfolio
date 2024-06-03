@@ -42,6 +42,7 @@ justify-content: center;
 align-items: center;
 position: fixed;
 z-index: 100;
+background-color: #fff;
 }
 .container-title-nav{
     width: 50%;
@@ -112,6 +113,8 @@ section{
     left: 25%;
     position: absolute;
     background-color: #eee;
+    border-top: 1px solid #0001;
+    border-left: 1px solid #0001;
     box-shadow: 15px 15px 10px #0009;
 }
 .container-card-photo{
@@ -121,16 +124,41 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: all 0.5s ease-in-out;
+
 }
 .container-card-data{
     width: 0%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 90%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 120px 120px 120px  ;
+    row-gap: 10px;
     transition: all 0.5s ease-in-out;
     opacity:0;
+    overflow: hidden;
+    
 }
+.card-data{
+    width: 100px;
+    height: 100px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 500;
+    border: 1px solid #0004;
+    transition: all 0.5s ease-in-out;
+ 
+  
+}
+.card-data:hover{
+      cursor: pointer;
+      box-shadow: 0 0 15px;
+      background-color: #000;
+      color: #fff;
+}
+
 .btn-open{
     position: absolute;
     left:93%;
@@ -201,12 +229,12 @@ section{
     justify-content: center;
     align-items: center;
     font-size: 25px;
+   
 }
-i{
-    color: #000; 
+.container-social-networld i{
+    color: #000;
+    transition: 0.5s ease-in-out;
 }
-
-
 .container-social-networld h2{
     width: 100%;
     height: 40%;
@@ -231,22 +259,18 @@ i{
 }
 
 
-.card-data{
-    width: 20%;
-    height: 20%;
-    background-color: #f70505;
-}
+
 .container-section{
     width: 40%;
     height: 100%;
-    display: flex; 
-    background-color: #f70505;
+    display: flex;
+
 }
 .container-section2{
     width: 60%;
     height: 100%;
     display: flex; 
-    background-color: #96e307;
+  
 }
 
 
