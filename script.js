@@ -31,10 +31,28 @@ function prueba(){
         containeCardPhoto.style.color="#000"
         github.style.color="#000"
         linkedin.style.color="#000"
+
+
+
+        cardData.style.display="grid"
+        cardData.style.placeContent="center"
+        messengerForm.style.width="100px"
+        messengerForm.style.height="100px"
+        messengerForm.style.borderRadius="50%"
+        proyect.style.width="100px"
+        proyect.style.opacity="100px"
+        curriculum.style.width="100px"
+        curriculum.style.height="100px"
+        curriculum.style.opacity="1"
+        proyect.style.opacity="1"
+
+        
     }
 }
 function messenger(){
-    cardData.style.display="flex"
+    cardData.style.alignItems="center"
+    cardData.style.gridTemplateColumns="100%"
+    
     messengerForm.style.width="100%"
     messengerForm.style.height="100%"
     messengerForm.style.borderRadius="0"
