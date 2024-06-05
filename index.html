@@ -40,23 +40,41 @@
                             <li><a href=""><i class="bi bi-linkedin" id="linkedin"></i></a></li>
                         </ul>
                     </div>
-                    <div class="btn-open" onclick="prueba()">
+                    <div class="btn-open" onclick="prueba()" id="btn-open">
                         <h2 class="work-sans" id="arrow"><i class="bi bi-arrow-right-circle"></i></h2>
                     </div>
                 </div>
 
                 <div class="container-card-data" id="container-card-data" >
-                    <div class="card-data"  id="proyect">
+                    <div class="card-data "  id="proyect">
                         <h4 class="work-sans">Proximos Proyectos </h4>
                     </div>
                     <div class="card-data"  id="curriculum" >
-                        <h4 class="work-sans"> Descargar Curriculum</h4>
+                        <a href="" download="Curriculum_Salas_Carlos"><h4 class="work-sans"> Descargar Curriculum</h4></a>   
                     </div>
-                    <div class="card-data" id="messenger" onclick="messenger()">
-                        <h4 class="work-sans">Enviame un mensaje</h4>
+                    <div class="card-data hover" id="messenger" onclick="messenger()">
+                        <h4 class="work-sans"  id="messengerh4">Enviame un mensaje</h4>
+                     
+                            <form action="" class="form" id="form">
+                                <i class="bi bi-x-lg" id="btnCancel" onclick="cancelForm()"></i> 
+                                <input type="text" name="name" placeholder="Nombre" required>
+                                <input type="text" name="lastname" placeholder="Apellido" required>
+                                <input type="number" name="number" placeholder="Telefono" required>
+                                <input type="email" name="email" placeholder="Email" required>
+                                <textarea name="text" name="menssage" placeholder="" maxlength="280" required></textarea>
+                                <button type="submit">Enviar</button>
+                               
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                            </form>
+                            
                     </div>
                    
                 </div>
+
+
+         
+
+
 
 
 
