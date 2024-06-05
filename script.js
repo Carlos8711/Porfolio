@@ -24,6 +24,7 @@ function prueba(){
     if(cardDataStyle.opacity=="0"){
         cardData.style.opacity="1"
         cardData.style.width="60%"
+        cardData.style.transform=""
         arrowi.style.transform="rotate(180deg)"
         containeCardPhoto.style.backgroundColor="#000"
         containeCardPhoto.style.color="#fff"

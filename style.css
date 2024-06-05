@@ -147,7 +147,6 @@ section{
  
 }
 .card-data{
-    border: 1px solid red;
     width: 100px;
     height: 100px;
     display: grid;
@@ -178,11 +177,12 @@ section{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    overflow: hidden;
     z-index: 100;
 }
 .btn-open h2{
-    width: 70px;
-    height:70px;
+    width: 60px;
+    height:60px;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -310,7 +310,6 @@ section{
         height: 100%;
         display: flex;
         border-top: 1px solid #0005;
-        
     }
     .container-data-footer{
         width: 33%;
@@ -350,7 +349,7 @@ section{
         overflow: hidden;
     }
     .form i{
-        max-width: 10%;
+        max-width: 55%;
         position: absolute;
         height: 80%;
         top: 0.5%;
@@ -361,7 +360,10 @@ section{
 
     .card-data i{
         width: 100%;
-        height: 7%;
+        height: 10%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
         position: absolute;
         font-size: 35px;
         margin: 0;
