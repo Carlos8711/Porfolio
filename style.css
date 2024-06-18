@@ -1,16 +1,20 @@
 html,body{
-    height: 120%;
-    margin: 0;
-    padding: 0;
+height: 100%;
+margin: 0;
+padding: 0;
 }
+
 header{
 width: 100%;
 height: 8%;
 display: flex;
+background-color: #000;
 }
 main{
     width: 100%;
-    height: 100%;
+    height: 80%;
+    display: flex;
+    transition: all 0.5s ease-in-out;
 }
 footer{
     width: 100%;
@@ -23,7 +27,6 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none; 
   margin: 0; 
 }
-
 input[type=number] { -moz-appearance:textfield; }
 /*******************************************************/
 
@@ -32,7 +35,6 @@ input[type=number] { -moz-appearance:textfield; }
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  
 }
 .josefin-slab{
     font-family: "Josefin Slab", serif;
@@ -48,14 +50,17 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: fixed;
-z-index: 100;
+z-index: 1000;
 background-color: #fff;
+border-bottom: 1px solid #0002;
+box-shadow: 0 0 2px #0002;
 }
 .container-title-nav{
-    width: 50%;
-    height: 100%;
-    display: flex;
+width: 50%;
+height: 100%;
+display: flex;
 }
+
 .container-title-nav h1{
     max-width: 50%;
     height: 100%;
@@ -63,6 +68,7 @@ background-color: #fff;
     justify-content: center;
     align-items: center;
     margin: 0;
+    cursor: pointer;
 }
 .container-title-nav h2{
     max-width: 50%;
@@ -80,8 +86,7 @@ background-color: #fff;
     justify-content: center;
     align-items: center;
     margin: 0;
-
-    }
+}
     .container-nav ul li{
         width: 20%;
         height: 50%;
@@ -90,7 +95,9 @@ background-color: #fff;
         align-items: center;
         list-style: none;
         letter-spacing: 1px;
+        font-size: 18px;
         margin: 0;
+        cursor: pointer;
     }
     .container-nav ul li a{
         width: 100%;
@@ -99,6 +106,7 @@ background-color: #fff;
         justify-content: center;
         align-items: center;
         text-decoration: none;
+        border-radius: 50%;
         font-size: 18px;
         margin: 0;
         color: #000;
@@ -109,6 +117,122 @@ section{
     height: 100%;
     display: flex; 
     background-color: #eee;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+#sectionhome{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: #eee;
+}
+#sectionaboutme{
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+   border-radius: 50%;
+   background-color: red;
+ 
+}
+
+/****************************************sectioncurriculum************************************************/
+#sectioncurriculum{
+  width: 0%;
+  height: 0%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+
+  /*border-radius: 50%;*/
+}
+.container-curriculum{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    border: 1PX SOLID RED; 
+}
+.container-title-curriculum h2{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    font-size: 55px;
+    margin: 0;
+    border: 1PX SOLID RED;
+}
+.container-title-curriculum{
+    width: 100%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    border: 1PX SOLID RED;
+}
+.curriculum{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    border: 1PX SOLID RED;
+    
+}
+.container-name-section-curriculum{
+    width: 40%;
+    height: 100%;
+    border: 1PX SOLID rgb(255, 255, 0);
+}
+.container-data-section-curriculum{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    border: 1PX SOLID rgb(25, 0, 255);
+}
+.container-data-section-curriculum h4{
+    width: 20%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    border: 1PX SOLID rgb(255, 255, 255);
+    margin: 0;
+}
+.data-section-curriculum{
+    width: 80%;
+    height: 100%;
+
+    border: 1PX SOLID rgb(25, 0, 255);
+}
+.data-section-curriculum h4{
+    width: 100%;
+    max-height: 15%;
+    display: flex;
+    align-items: center;
+    border: 1PX SOLID rgb(25, 0, 255);
+    margin: 0;
+}
+.data-section-curriculum p{
+    width: 100%;
+    height: 85%;
+    margin: 0;
+    border: 1PX SOLID rgb(25, 0, 255);
+}
+
+
+/**************************************** fin sectioncurriculum************************************************/
+#sectionproyect{
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    border-radius: 50%;
+    background-color:rgb(9, 0, 128);
+}
+#sectioncontact{
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    border-radius: 50%;
+    background-color:rgb(128, 115, 0);
 }
 .container-card{
     width: 60%;
@@ -116,13 +240,14 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 20%;
-    left: 25%;
+    top: 14%;
+    left: 20%;
     position: absolute;
     background-color: #eee;
-    border-top: 1px solid #0001;
-    border-left: 1px solid #0001;
-    box-shadow: 15px 15px 10px #0009;
+    /*  border-top: 1px solid #0001;
+    border: 1px solid #0004;
+ box-shadow: 15px 15px 21px #0009;*/
+   transition: all 0.5s ease-in-out;
 }
 .container-card-photo{
     width: 40%;
@@ -160,12 +285,9 @@ section{
     overflow: hidden;
 }
 
-
-
-.hover:hover{
+.btn-open h2 i:hover{
     cursor: pointer;
-    background-color: #000;
-    color: #fff;
+    color: #0009;
 }
 
 .btn-open{
@@ -187,38 +309,44 @@ section{
     justify-content: center;
     align-items: center; 
     border-radius: 50%;
+    border: 1px solid #0004;
     transition: all 0.5s ease-in-out;
+    animation:wadwbtn 2s linear infinite;
+    background-color: #eee;
 }
+
 
  /* animation:wadwbtn 1s linear infinite;
     background-color: #eee;*/
-/*@keyframes wadwbtn {
+@keyframes wadwbtn {
     0%{
         width: 50px;
         height:50px; 
-
+    }
+    50%{
+        width: 75px;
+        height:75px;
     }
     100%{
-        width: 80px;
-        height:80px; 
-        border: none;
+        width: 50px;
+        height:50px; 
     }
-
-}*/
+}
 
 
 
 
 .btn-open h2 i{
-    width: 100%;
-    height:100%;
+    width: 90%;
+    height:90%;
     display: flex;
     justify-content: center;
     align-items: center; 
     border-radius: 50%;
-    color: #000000;
+    color: #0005;
     background-color: #eee;
     font-size: 50px;
+    transition: all 0.25s ease-in-out;
 }
 .card-photo{
     width: 100%;
@@ -392,7 +520,6 @@ section{
         margin: 2%;
         border: none;
         background-color: #eee;
-        transition: all 0.1s ease-in-out;
         border: 1px solid rgba(0, 0, 0, 0.349);
     }
     button {
@@ -405,5 +532,3 @@ section{
         transition: all 0.5s ease-in-out ;
         border: 1px solid
     }
-
-        

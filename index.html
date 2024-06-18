@@ -14,26 +14,26 @@
     <header>
         <div class="container-nav">
             <div class="container-title-nav">
-                <h1 class="work-sans">Carlos Salas/</h1>
+                <h1 class="work-sans"  onclick="homeOpen()">Carlos Salas/</h1>
                 <h2 class="work-sans">Desarrollador web</h2>
             </div>
             <ul class="rubik-uniquifier">
-                <li ><a href="" >Sobre mi</a></li>
-                <li><a href="">Curriculum</a></li>
-                <li><a href="">Proyectos</a></li>
-                <li><a href="">Contacto</a></li>
+                <li onclick="aboutMeOpen()">Sobre mi</li>
+                <li onclick="curriculumOpen()">Curriculum</li>
+                <li onclick="proyectOpen()">Proyectos</li>
+                <li onclick="contactOpen()">Contact</li>
             </ul>
         </div>
     </header>
-    <main>
-        <section>
-            <div class="container-card">
+    <main id="main">
+        <section id="sectionhome">
+            <div class="container-card" id="container-card">
                 <div class="container-card-photo" id="container-card-photo">
                     <div class="card-photo" >
                         <img src="./image/man-6339003.jpg" alt="" >
                     </div>
                     <div class="container-social-networld">
-                        <h2 class="work-sans">Carlos<br>Salas</h2>
+                        <h2 class="work-sans">Carlos Salas</h2>
                         <h3 class="rubik-uniquifier"> Desarrollador Web Full Stack</h3>
                         <ul>
                             <li><a href=""><i class="bi bi-github" id="github"></i></a></li>
@@ -41,7 +41,7 @@
                         </ul>
                     </div>
                     <div class="btn-open" onclick="prueba()" id="btn-open">
-                        <h2 class="work-sans" id="arrow"><i class="bi bi-arrow-right-circle"></i></h2>
+                        <h2 class="work-sans" id="arrow"><i class="bi bi-arrow-right-circle" id="icopen"></i></h2>
                     </div>
                 </div>
 
@@ -72,26 +72,80 @@
                 </div>
 
 
-         
-
-
-
-
-
-
-
             </div>
 
-            <div class="container-section">
+        </section>
 
-            </div>
-            <div class="container-section2">
+  
+        <section id="sectionaboutme">
+
+        </section>
+        <section id="sectioncurriculum">
+
+
+            <div class="container-curriculum">
+
+                    <div class="container-title-curriculum">
+                        <h2>Curriculum</h2>
+                    </div>
+          
+                <div class="curriculum">
+                    <div class="container-name-section-curriculum">
+                        <h2>Experiencia Laboral</h2>
+                    </div>
+
+                    <div class="container-data-section-curriculum">
+                            <h4>fecha</h4>
+
+                        <div class="data-section-curriculum">
+                            <h4>soporte tecnico</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorum natus cumque nostrum beatae odit adipisci, quaerat perferendis. Voluptates amet inventore quod tempore quae animi quam nesciunt perferendis facere aliquam.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="curriculum">
+                    <div class="container-name-section-curriculum">
+                        <h2>Educacion</h2>
+                    </div>
+                    <div class="container-data-section-curriculum">
+                         <h4>fecha</h4>
+
+                        <div class="data-section-curriculum">
+                            <h4>soporte tecnico</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorum natus cumque nostrum beatae odit adipisci, quaerat perferendis. Voluptates amet inventore quod tempore quae animi quam nesciunt perferendis facere aliquam.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="curriculum">
+                    <div class="container-name-section-curriculum">
+                        <h2>Habilidades y Experiencia</h2>
+                    </div>
+                    <div class="container-data-section-curriculum">
+                        <h4>fecha</h4>
+
+                        <div class="data-section-curriculum">
+                            <h4>soporte tecnico</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorum natus cumque nostrum beatae odit adipisci, quaerat perferendis. Voluptates amet inventore quod tempore quae animi quam nesciunt perferendis facere aliquam.</p>
+
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
         </section>
+        <section id="sectionproyect">
+            <h2>aaaaa</h2>
+        </section>
+        <section id="sectioncontact">
+            <h2>aaaaa</h2>
+        </section>
+
+
     </main>
-    <footer class="josefin-slab">
+    <footer class="josefin-slab" >
         <div class="container-footer">
             <div class="container-data-footer">
                 <h2>Telefono</h2>
