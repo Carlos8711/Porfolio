@@ -91,12 +91,15 @@ function messenger(){
     messengerh4.style.fontSize="20px"
     messengerh4.style.color="#000"
 }
+
+
+
 function homeOpen(){
     sectionPri.style.width="100%"
     sectionPri.style.height="100%"
     sectionPri.style.opacity="1"
     sectionPri.style.borderRadius="0"
-    main.style.height="80%"
+    main.style.overflow="hidden"
 
     sectionaboutme.style.width="0%"
     sectionaboutme.style.height="0%"
@@ -149,6 +152,7 @@ function aboutMeOpen(){
     sectionaboutme.style.height="100%"
     sectionaboutme.style.opacity="1"
     sectionaboutme.style.borderRadius="0"
+    main.style.overflow="hidden"
 }
 
 
@@ -176,7 +180,8 @@ function curriculumOpen(){
     sectioncurriculum.style.width="100%"
     sectioncurriculum.style.height="100%"
     sectioncurriculum.style.borderRadius="0"
-    main.style.height="300%"
+    sectioncurriculum.style.height="300%"
+    main.style.overflow="scroll"
 }
 
 
@@ -205,9 +210,8 @@ function proyectOpen(){
     sectionproyect.style.width="100%"
     sectionproyect.style.height="100%"
     sectionproyect.style.borderRadius="0"
-    main.style.height="80%"
+    main.style.overflow="hidden"
   
-   
 }
 
 function contactOpen(){
@@ -234,6 +238,6 @@ function contactOpen(){
     sectioncontact.style.width="100%"
     sectioncontact.style.height="100%"
     sectioncontact.style.borderRadius="0"
+    main.style.overflow="hidden"
     
-    main.style.height="80%"
 }
