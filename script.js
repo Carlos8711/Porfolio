@@ -120,7 +120,7 @@ function homeOpen(){
     sectioncontact.style.width="0%"
     sectioncontact.style.height="0%"
     sectioncontact.style.borderRadius="50%"
-
+    main.style.height="81%"
 }
 
 
@@ -152,7 +152,7 @@ function aboutMeOpen(){
     sectionaboutme.style.height="100%"
     sectionaboutme.style.opacity="1"
     sectionaboutme.style.borderRadius="0"
-    main.style.overflow="hidden"
+       main.style.height="81%"
 }
 
 
@@ -180,8 +180,9 @@ function curriculumOpen(){
     sectioncurriculum.style.width="100%"
     sectioncurriculum.style.height="100%"
     sectioncurriculum.style.borderRadius="0"
-    sectioncurriculum.style.height="300%"
-    main.style.overflow="scroll"
+    sectioncurriculum.style.height="100%"
+    main.style.height="200%"
+  
 }
 
 
@@ -210,7 +211,7 @@ function proyectOpen(){
     sectionproyect.style.width="100%"
     sectionproyect.style.height="100%"
     sectionproyect.style.borderRadius="0"
-    main.style.overflow="hidden"
+    main.style.height="81%"
   
 }
 
@@ -238,6 +239,5 @@ function contactOpen(){
     sectioncontact.style.width="100%"
     sectioncontact.style.height="100%"
     sectioncontact.style.borderRadius="0"
-    main.style.overflow="hidden"
-    
+      main.style.height="81%"
 }
